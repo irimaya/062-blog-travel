@@ -1,0 +1,123 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+// Font
+$font-title: 'Ubuntu', sans-serif;
+$font-body: 'Ubuntu', sans-serif;;
+
+// Colors
+$main-color: #1a67eb;
+$secondary-color: #1d1d1d;
+$gray1-color: #4d4d4d;
+$gray2-color: #707070;
+$gray3-color: #9b9b9a;
+
+// Import
+@import 'mobile';
+
+// START HERE
+// Main Styling
+html, body {
+  font-family: $font-body;
+}
+
+// Header
+#mainheader {
+  .subnav-info {
+    float: left;
+    ul {
+      list-style: none; 
+      padding-inline-start: 0px;
+      li {
+        float: left;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        color: $gray1-color;
+      } //End li
+    } //End ul
+  } //End .subnav-info
+  .subnav-social {
+    float: right;
+    ul {
+      list-style: none;
+      li {
+        float: right;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        color: $gray1-color;
+      } //End li
+    } //End ul
+  } //End .subnav-social
+  .logo {
+    height: 80px;
+  }
+  .navbar {
+    // background: $secondary-color;
+    padding: 0 !important;
+    height: 65px;
+    // float: right;
+    ul {
+      background: $secondary-color;
+      width: 100%;
+      list-style: none;
+      float: right;
+      padding-inline-start: 0px;
+      li {
+        float: left;
+        // display: block;
+        // padding-right: 20px;
+        padding: 20px;
+        text-align: center;
+        a {
+          color: #fff;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      } //End li
+      li:hover {
+        background: $main-color;
+      }
+    } //End ul
+  } //End .navbar
+} //End #mainheader
+
+// Showcase
+#showcase {
+  background: url('../img/pattern-showcase.png');
+  height: 100%;
+  .card-img-overlay {
+    position: absolute;
+    bottom: 0 !important;
+    top: auto;
+    h4 a {
+      color: #fff;
+    }
+    h4 a:hover {
+      text-decoration: none;
+    }
+  } //End .card-img-overlay
+  .card-showcase {
+    img {
+      height: 285px;
+    }
+  }
+} //End #showcase
+
+// Features
+#features {
+  .card-img-overlay {
+    position: absolute;
+    bottom: 0 !important;
+    top: auto;
+    h5 a {
+      color: #fff;
+    }
+    h5 a:hover {
+      text-decoration: none;
+    }
+    
+  } //End .card-img-overlay
+} //End #showcase
